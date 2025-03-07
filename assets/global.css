@@ -3,21 +3,19 @@
     src:url('./fonts/PixelifySans-Bold.ttf') format('truetype');
 }
 
-* {
-    margin: 100;
-    padding: 10;
-    box-sizing: border-box;
-}
-
-
 body {
     font-family: Myfont;
-    background: linear-gradient(to bottom, #6CB4EE 30%, #89CFF0 60%, #B0DAF1 85%, #D0E8F2 95%);
+    background: linear-gradient(to bottom, 
+        #E0F7FA 10%,  
+        #B0DAF1 30%,  
+        #89CFF0 60%,  
+        #6CB4EE 90%  
+    );
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    color: white;
+    color: #318CE7;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -27,4 +25,26 @@ body {
 
 h2{
     font-family: Myfont;
+}
+
+.icon {
+    width: 30px;  
+    height: 30px;
+    vertical-align: middle; 
+    margin: 0 10px; 
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+#start-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#start-btn img {
+    margin-top: 10px;
+    width: 75px;
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2)); /* Light shadow */
 }
